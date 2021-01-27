@@ -24,6 +24,8 @@
             	 System.out.println(t + " = " + nm[t] );
              }
              
+             connection.eval("plot(seq(-pi,pi,0.1), sin(seq(-pi,pi,0.1)))");
+             
              
          } catch (RserveException e) {
              e.printStackTrace();
