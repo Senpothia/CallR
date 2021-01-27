@@ -24,7 +24,10 @@
             	 System.out.println(t + " = " + nm[t] );
              }
              
+             connection.eval("png(file = \"myplot1.png\", bg = \"transparent\")");
              connection.eval("plot(seq(-pi,pi,0.1), sin(seq(-pi,pi,0.1)))");
+             connection.eval("dev.off()");
+             
              
              
          } catch (RserveException e) {
